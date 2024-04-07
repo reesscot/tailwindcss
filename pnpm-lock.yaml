@@ -48,8 +48,8 @@ importers:
         specifier: ^12.0.2
         version: 12.0.2(postcss@8.4.33)
       tailwind-config-viewer:
-        specifier: ^1.7.3
-        version: 1.7.3(tailwindcss@3.4.1)
+        specifier: ^2.0.1
+        version: 2.0.1(tailwindcss@3.4.1)
       tailwindcss:
         specifier: ~3.4.1
         version: 3.4.1
@@ -9061,9 +9061,9 @@ packages:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
     dev: false
 
-  /tailwind-config-viewer@1.7.3(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-rgeFXe9vL4njtaSI1y2uUAD1aRx05RYHbReN72ARAVEVSlNmS0Zf46pj3/ORc3xQwLK/AzbaIs6UFcK7hJSIlA==}
-    engines: {node: '>=8'}
+  /tailwind-config-viewer@2.0.1(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-0mfPRjxzKvQNW5YNh1EXhURV54ZtBvK4489tD8iosAVO8MZagC5BSdcl1i2b0tG+TiYIyEzBwDGQpE9vV/5gaA==}
+    engines: {node: '>=13'}
     hasBin: true
     peerDependencies:
       tailwindcss: 1 || 2 || 2.0.1-compat || 3
