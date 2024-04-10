@@ -5,10 +5,10 @@ export default defineNuxtConfig({
   // bridge: false,
   components: true,
   buildModules: [
-    tailwindModule
+    tailwindModule,
   ],
-  // @ts-ignore
+  // @ts-expect-error
   tailwindcss: {
-    exposeConfig: true
-  }
+    exposeConfig: true,
+  },
 })

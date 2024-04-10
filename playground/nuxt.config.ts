@@ -6,16 +6,16 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     existsSync(resolve(__dirname, '../dist/module.mjs')) ? '@nuxtjs/tailwindcss' : '../src/module',
-    '@nuxt/devtools'
+    '@nuxt/devtools',
   ],
   tailwindcss: {
     // viewer: false,
     exposeConfig: true,
     cssPath: '~/assets/css/tailwind.css',
-    editorSupport: true
+    editorSupport: true,
   },
   content: {
-    documentDriven: true
+    documentDriven: true,
   },
   css: [
     // Including Inter CSS is the first component to reproduce HMR issue. It also causes playground to look better,
@@ -23,6 +23,6 @@ export default defineNuxtConfig({
     '@fontsource/inter/400.css',
     '@fontsource/inter/500.css',
     '@fontsource/inter/600.css',
-    '@fontsource/inter/700.css'
-  ]
+    '@fontsource/inter/700.css',
+  ],
 })

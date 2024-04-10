@@ -11,8 +11,9 @@ export const configMerger: (
     if (isJSObject(obj[key]) && Array.isArray(value)) {
       obj[key]['files'] = [...(obj[key]['files'] || []), ...value]
       return true
-    } else if (Array.isArray(obj[key]) && isJSObject(value)) {
-      obj[key] = { ...value, files: [...obj[key], ...(value.files || [])]}
+    }
+    else if (Array.isArray(obj[key]) && isJSObject(value)) {
+      obj[key] = { ...value, files: [...obj[key], ...(value.files || [])] }
       return true
     }
   }

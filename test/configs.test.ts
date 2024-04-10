@@ -27,15 +27,15 @@ describe('tailwindcss module configs', async () => {
       'malformed-tailwind.config',
       'ts-tailwind.config',
       'override-tailwind.config.js',
-      'content-obj.config'
+      'content-obj.config',
     ],
-    cssPath: 'tailwind.css'
+    cssPath: 'tailwind.css',
   },
   {
     dir: { plugins: 'my-pluggable-modules', modules: 'my-modular-plugins' },
     modules: [r('modules/cjs-config.ts'), '@nuxtjs/tailwindcss'],
     imports: { dirs: ['my-imports-dir1', 'my-imports-dir2'] },
-    extensions: ['.json', '.mdc', '.mdx', '.coffee']
+    extensions: ['.json', '.mdc', '.mdx', '.coffee'],
   })
 
   test('throws error about malformed config', () => {
@@ -66,7 +66,7 @@ describe('tailwindcss module configs', async () => {
 
   test('content is overridden', () => {
     // set from override-tailwind.config.ts
-    const { content: { files: contentFiles }} = destr<TWConfigWithStringContent>(getVfsFile('test-tailwind.config.cjs')!.replace(/^(module\.exports = )/, ''))
+    const { content: { files: contentFiles } } = destr<TWConfigWithStringContent>(getVfsFile('test-tailwind.config.cjs')!.replace(/^(module\.exports = )/, ''))
 
     expect(contentFiles[0]).toBe('ts-content/**/*.md')
     expect(contentFiles[1]).toBe('./custom-theme/**/*.vue')
